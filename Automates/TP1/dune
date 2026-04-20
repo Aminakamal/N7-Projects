@@ -1,5 +1,0 @@
-(ocamllex lexerJava)
-
-(executable
- (modes byte exe)
- (name mainJava))

@@ -1,0 +1,13 @@
+(ocamllex lexer)
+
+(menhir
+ (modules parser))
+
+(library
+ (name tp2)
+ (inline_tests
+  (deps
+   (file %{project_root}/nathomme2016.txt)
+   (file %{project_root}/nat2016.txt)))
+ (preprocess
+  (pps ppx_inline_test)))

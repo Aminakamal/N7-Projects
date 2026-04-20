@@ -1,0 +1,93 @@
+Problem:    ModelECommerce12
+Rows:       23
+Columns:    24 (6 integer, 6 binary)
+Non-zeros:  78
+Status:     INTEGER OPTIMAL
+Objective:  cout_total = 274 (MINimum)
+
+   No.   Row name        Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 cout_total                274                             
+     2 satisfaction[D1,F1]
+                                   1             1             = 
+     3 satisfaction[D1,F2]
+                                   1             1             = 
+     4 satisfaction[D2,F1]
+                                   3             3             = 
+     5 satisfaction[D2,F2]
+                                   1             1             = 
+     6 limite_stock[M1,F1]
+                                   0                         2.5 
+     7 limite_stock[M1,F2]
+                                   0                           1 
+     8 limite_stock[M2,F1]
+                                   3                           3 
+     9 limite_stock[M2,F2]
+                                   1                           2 
+    10 limite_stock[M3,F1]
+                                   1                           1 
+    11 limite_stock[M3,F2]
+                                   1                           3 
+    12 calcul_quantite[M1,D1]
+                                   0            -0             = 
+    13 calcul_quantite[M1,D2]
+                                   0            -0             = 
+    14 calcul_quantite[M2,D1]
+                                   0            -0             = 
+    15 calcul_quantite[M2,D2]
+                                   0            -0             = 
+    16 calcul_quantite[M3,D1]
+                                   0            -0             = 
+    17 calcul_quantite[M3,D2]
+                                   0            -0             = 
+    18 activation_cout_fixe[M1,D1]
+                                   0                          -0 
+    19 activation_cout_fixe[M1,D2]
+                                   0                          -0 
+    20 activation_cout_fixe[M2,D1]
+                                   0                          -0 
+    21 activation_cout_fixe[M2,D2]
+                               -9996                          -0 
+    22 activation_cout_fixe[M3,D1]
+                               -9998                          -0 
+    23 activation_cout_fixe[M3,D2]
+                                   0                          -0 
+
+   No. Column name       Activity     Lower bound   Upper bound
+------ ------------    ------------- ------------- -------------
+     1 x[M1,D1,F1]                 0             0               
+     2 x[M1,D1,F2]                 0             0               
+     3 x[M1,D2,F1]                 0             0               
+     4 x[M1,D2,F2]                 0             0               
+     5 x[M2,D1,F1]                 0             0               
+     6 x[M2,D1,F2]                 0             0               
+     7 x[M2,D2,F1]                 3             0               
+     8 x[M2,D2,F2]                 1             0               
+     9 x[M3,D1,F1]                 1             0               
+    10 x[M3,D1,F2]                 1             0               
+    11 x[M3,D2,F1]                 0             0               
+    12 x[M3,D2,F2]                 0             0               
+    13 y[M1,D1]     *              0             0             1 
+    14 y[M1,D2]     *              0             0             1 
+    15 y[M2,D1]     *              0             0             1 
+    16 y[M2,D2]     *              1             0             1 
+    17 y[M3,D1]     *              1             0             1 
+    18 y[M3,D2]     *              0             0             1 
+    19 q[M1,D1]                    0             0               
+    20 q[M1,D2]                    0             0               
+    21 q[M2,D1]                    0             0               
+    22 q[M2,D2]                    4             0               
+    23 q[M3,D1]                    2             0               
+    24 q[M3,D2]                    0             0               
+
+Integer feasibility conditions:
+
+KKT.PE: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+KKT.PB: max.abs.err = 0.00e+00 on row 0
+        max.rel.err = 0.00e+00 on row 0
+        High quality
+
+End of output

@@ -1,0 +1,6 @@
+<expression> ::= 
+             PAROUV <expression> PARFER 
+             | <elementaire> 
+             | <expression> { (PLUS | MULTIPLY) <expression> } .
+
+<elementaire> ::= [MINUS] NUMBER .

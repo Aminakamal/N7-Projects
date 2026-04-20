@@ -1,0 +1,11 @@
+int** creerPP() {
+    int** pp = (new int*);
+    (*pp) = (new int);
+    (*(*pp)) = 99;
+    return pp;
+}
+
+test {
+    int** pp = creerPP();
+    print (*(*pp));
+}

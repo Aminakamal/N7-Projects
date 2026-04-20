@@ -1,0 +1,5 @@
+test {
+    rat r = [3/4];
+    rat* pr = &r;
+    print (*pr);
+}

@@ -1,0 +1,5 @@
+test {
+    rat* pr = (new rat);
+    (*pr) = [5/7];
+    print (*pr);
+}

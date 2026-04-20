@@ -1,0 +1,17 @@
+matplotlib 
+seaborn 
+numpy 
+ipywidgets 
+ipython 
+plotly 
+tqdm 
+scipy 
+pythreejs 
+pillow 
+vedo 
+ipympl
+nbformat  
+trimesh
+scikit-learn
+meshio
+anywidget

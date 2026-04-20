@@ -1,0 +1,29 @@
+# ============================================
+# Données pour le cas 1.1
+# ============================================
+
+data;
+
+# Définition des ensembles
+set DEMANDES := D1 D2;
+set FLUIDES := F1 F2;
+set MAGASINS := M1 M2 M3;
+
+# Tableau (a): Fluides demandés par commande
+param demande: F1  F2 :=
+        D1     1   1
+        D2     3   1;
+
+# Tableau (b): Stocks de fluides par magasin
+param stock: F1   F2 :=
+        M1   2.5  1
+        M2   3    2
+        M3   1    3;
+
+# Tableau (c): Coûts unitaires par magasin et fluide
+param cout: F1  F2 :=
+       M1   2   3
+       M2   2   1
+       M3   3   2;
+
+end;

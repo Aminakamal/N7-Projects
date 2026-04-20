@@ -1,0 +1,3 @@
+main {
+  Inexistant x = Rouge;
+}

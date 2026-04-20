@@ -1,0 +1,14 @@
+void proc1() {
+    print 1;
+    return;
+}
+
+int fonc1() {
+    return 2;
+}
+
+test {
+    proc1();
+    int x = fonc1();
+    print x;
+}

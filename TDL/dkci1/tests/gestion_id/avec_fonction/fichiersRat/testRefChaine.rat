@@ -1,0 +1,19 @@
+int p0(ref int a) {
+    a = (a+1);
+    return a;
+}
+
+int p1(ref int a) {
+    return p0(ref a);
+}
+
+int p2(ref int a) {
+    return p1(ref a);
+}
+
+test {
+    int x = 0;
+    int r = p2(ref x);
+    print r;
+    print x;
+}

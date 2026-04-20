@@ -1,0 +1,12 @@
+int f(ref int a, ref rat r) {
+    a = (a+1);
+    r = [1/2];
+    return a;
+}
+
+test {
+    int x = 5;
+    rat y = [3/4];
+    int res = f(ref x, ref y);
+    print res;
+}

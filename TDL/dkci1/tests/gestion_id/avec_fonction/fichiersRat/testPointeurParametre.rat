@@ -1,0 +1,10 @@
+int* allouer(int val) {
+    int* p = (new int);
+    (*p) = val;
+    return p;
+}
+
+test {
+    int* px = allouer(42);
+    print (*px);
+}

@@ -1,0 +1,7 @@
+void maProc() {
+    return 5;
+}
+
+test {
+    maProc();
+}

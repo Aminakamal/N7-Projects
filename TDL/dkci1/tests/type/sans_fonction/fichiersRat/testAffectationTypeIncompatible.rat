@@ -1,0 +1,5 @@
+test {
+    int x = 5;
+    bool y = true;
+    x = y;
+}

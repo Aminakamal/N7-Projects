@@ -1,0 +1,14 @@
+matplotlib 
+seaborn 
+numpy 
+ipywidgets 
+ipython 
+plotly 
+tqdm 
+scipy 
+pythreejs 
+pillow 
+vedo 
+numba 
+ipympl
+nbformat  

@@ -1,0 +1,6 @@
+test {
+    rat x = [1/2];
+    rat y = [3/4];
+    x = y;
+    print x;
+}

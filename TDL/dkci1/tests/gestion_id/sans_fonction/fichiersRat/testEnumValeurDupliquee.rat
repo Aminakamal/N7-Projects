@@ -1,0 +1,6 @@
+enum Couleur {Rouge, Vert, Bleu};
+enum Teinte {Rouge, Jaune};
+
+main {
+  Couleur c = Rouge;
+}

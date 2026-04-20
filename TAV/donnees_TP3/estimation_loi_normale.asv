@@ -1,0 +1,8 @@
+function [moyennes,variances] = estimation_loi_normale(echantillons)
+n = size(echantillons);
+moyennes = zeros(n);
+variances = zeros(n);
+for i=0:n
+    moyennes(k) = mean(echantillons(i));
+    variances(k)= echantillons(k)
+end

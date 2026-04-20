@@ -1,0 +1,13 @@
+void modifier(ref int a, ref rat r) {
+    a = 10;
+    r = [5/6];
+    return;
+}
+
+test {
+    int x = 1;
+    rat y = [1/2];
+    modifier(ref x, ref y);
+    print x;
+    print y;
+}

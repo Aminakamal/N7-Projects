@@ -1,0 +1,10 @@
+void incrementer(int* p) {
+    (*p) = ((*p) + 1);
+    return;
+}
+
+test {
+    int x = 5;
+    incrementer(&x);
+    print x;
+}

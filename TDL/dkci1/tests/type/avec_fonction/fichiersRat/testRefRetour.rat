@@ -1,0 +1,11 @@
+int doubleEtRetourne(ref int a) {
+    a = (a*2);
+    return a;
+}
+
+test {
+    int x = 5;
+    int r = doubleEtRetourne(ref x);
+    print r;
+    print x;
+}

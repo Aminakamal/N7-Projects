@@ -1,0 +1,18 @@
+# ============================================
+# Données pour l'exercice 2
+# ============================================
+
+data;
+
+# Nombre de personnes/tâches
+param N := 3;
+
+# Matrice des préférences (notées sur 10)
+# Lignes = Personnes (P1, P2, P3)
+# Colonnes = Tâches (T1, T2, T3)
+param preference: 1  2  3 :=
+           1      4  7  9
+           2      9  8  3
+           3      2  1  2;
+
+end;

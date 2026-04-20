@@ -1,0 +1,9 @@
+test {
+    int x = 1;
+    int y = 2;
+    int* px = &x;
+    int* py = &y;
+    (*px) = (*py);
+    print x;
+    print y;
+}

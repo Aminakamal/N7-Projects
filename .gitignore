@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+.ipynb_checkpoints/
+
+# OCaml / dune
+_build/
+
+# Java / generic build outputs
+build/
+out/
+*.class
+
+# Node
+node_modules/
+
+# OS / editor
+.DS_Store
+.vscode/

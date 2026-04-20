@@ -1,0 +1,5 @@
+enum Color {Red, Green, Blue};
+main{
+bool b = (Red=Red);
+print b;
+}

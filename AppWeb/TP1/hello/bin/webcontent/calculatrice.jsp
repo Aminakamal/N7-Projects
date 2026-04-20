@@ -1,0 +1,18 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Calculatrice</title>
+</head>
+<body>
+    <form action="/hello/Serv" method="get">
+        <input type="number" name="nb1">
+        <input type="number" name="nb2">
+        <input type="submit" name="Compute" value="Compute">
+    </form>
+</body>
+
+   resultat <%=request.getAttribute("resultat")%>
+</body>
+</html>

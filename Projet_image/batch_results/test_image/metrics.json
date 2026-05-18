@@ -1,0 +1,13 @@
+{
+  "psnr": 9.660188117744484,
+  "ssim": 0.8339858618717023,
+  "keypoint_match_ratio": 0.34782608695652173,
+  "keypoint_matches": 32,
+  "seams_overlay": "batch_results/test_image/seams_overlay.png",
+  "mean_gradient_orig": 11.627009637126443,
+  "mean_gradient_proc": 11.785973740879372,
+  "edge_density_orig": 0.011279166666666667,
+  "edge_density_proc": 0.0122375,
+  "entropy_mean_orig": 0.055158522537463395,
+  "entropy_mean_proc": 0.11656573082561202
+}

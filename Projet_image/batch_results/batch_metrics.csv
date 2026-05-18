@@ -1,0 +1,2 @@
+image,psnr,ssim,keypoint_match_ratio,keypoint_matches,seams_overlay,mean_gradient_orig,mean_gradient_proc,edge_density_orig,edge_density_proc,entropy_mean_orig,entropy_mean_proc
+test_image.png,9.660188117744484,0.8339858618717023,0.34782608695652173,32,batch_results/test_image/seams_overlay.png,11.627009637126443,11.785973740879372,0.011279166666666667,0.0122375,0.055158522537463395,0.11656573082561202

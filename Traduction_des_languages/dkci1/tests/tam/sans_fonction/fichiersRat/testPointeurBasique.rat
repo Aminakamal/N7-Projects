@@ -1,5 +1,0 @@
-test {
-    int x = 5;
-    int* px = &x;
-    print (*px);
-}

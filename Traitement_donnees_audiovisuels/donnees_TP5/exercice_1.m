@@ -58,7 +58,7 @@ Dy(nb_lignes:nb_lignes:end,:) = 0;
 b = u_0;
 		
 % Point fixe :
-lambda = 15;			% Poids de la regularisation
+lambda = 12;			% Poids de la regularisation
 u_k = u_0;
 convergence = +Inf;
 iteration = 0;

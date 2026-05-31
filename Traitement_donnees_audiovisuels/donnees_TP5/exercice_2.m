@@ -62,7 +62,7 @@ W_D = spdiags(1-chi_D,0,nb_pixels,nb_pixels);
 b = W_D*u_0;
 		
 % Point fixe :
-lambda = 15;			% Poids de la regularisation
+lambda = 100;			% Poids de la regularisation
 u_k = u_0;
 convergence = +Inf;
 iteration = 0;

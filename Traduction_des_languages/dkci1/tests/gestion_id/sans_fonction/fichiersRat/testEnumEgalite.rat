@@ -1,9 +1,0 @@
-enum Couleur {Rouge, Vert, Bleu};
-
-main {
-  Couleur c1 = Rouge;
-  Couleur c2 = Rouge;
-  Couleur c3 = Bleu;
-  print (c1=c2);
-  print (c1=c3);
-}

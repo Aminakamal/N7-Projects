@@ -1,0 +1,3 @@
+function [pics_t, pics_f] = pics_spectraux(S, eta_t, eta_f, epsilon)
+
+SE = strel()

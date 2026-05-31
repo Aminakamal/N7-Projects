@@ -38,8 +38,8 @@ add_executable(moreteapots moreteapots.cpp)
 list(APPEND TP_TARGETS "moreteapots")
 
 # Uncomment the following lines to build navigator once you have added the cpp files
-# add_executable(navigator navigator.cpp)
-# list(APPEND TP_TARGETS "navigator")
+add_executable(navigator navigator.cpp)
+list(APPEND TP_TARGETS "navigator")
 
 foreach(TARGET IN LISTS TP_TARGETS)
     target_include_directories(${TARGET} PUBLIC ${OPENGL_INCLUDE_DIR} ${GLUT_INCLUDE_DIR})

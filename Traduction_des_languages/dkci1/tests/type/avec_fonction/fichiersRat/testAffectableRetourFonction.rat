@@ -1,9 +1,0 @@
-int getValue() {
-    return 42;
-}
-
-test {
-    int x = 0;
-    x = getValue();
-    print x;
-}

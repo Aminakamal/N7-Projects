@@ -1,7 +1,0 @@
-enum Couleur {Rouge, Vert};
-enum Jour {Lundi, Mardi};
-
-main {
-  Couleur c = Rouge;
-  Jour j = c;
-}

@@ -1,5 +1,0 @@
-test {
-    int* px = null;
-    int* py = (new int);
-    px = py;
-}

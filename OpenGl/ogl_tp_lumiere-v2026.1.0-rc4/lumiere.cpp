@@ -130,6 +130,7 @@ void glRoom(GLfloat size)
  */
 void place_camera()
 {
+    // On recule la caméra puis on applique son orientation : c'est la construction de la vue.
     glTranslatef (0.f, 0.f, -distance);
     glRotatef (angle_x, 1.f, .0f, .0f);
     glRotatef (angle_y, .0f, 1.f, .0f);
@@ -152,7 +153,7 @@ void set_ambient_light(const GLfloat* color)
 void place_light(Light& light) 
 {
     //**********************************
-    // set the light position (directional or positional)
+    // On fixe la position de la lumière. w = 0 donne une lumière directionnelle, w = 1 une lumière ponctuelle.
     //**********************************
     GLfloat position[4]{light.position[0], light.position[1], light.position[2], light.directional ? 0.f : 1.f};
     glLightfv(GL_LIGHT0, GL_POSITION, position);
@@ -201,23 +202,10 @@ void place_light(Light& light)
 */
 void define_material(const Material& mat) 
 {
-   //**********************************
-    // set the ambient property
-    //**********************************
+    // Les coefficients du matériau correspondent aux termes du modèle de Phong.
     glMaterialfv(GL_FRONT, GL_AMBIENT, mat.ambient);
-    //**********************************
-    // set the diffuse property
-    //**********************************
     glMaterialfv(GL_FRONT, GL_DIFFUSE, mat.diffuse);
-
-    //**********************************
-    // set the specular property
-    //**********************************
     glMaterialfv(GL_FRONT, GL_SPECULAR, mat.specular);
-
-    //**********************************
-    // set the shininess property
-    //**********************************
     glMaterialf(GL_FRONT, GL_SHININESS, mat.shininess);
 }
 
@@ -242,7 +230,7 @@ void init ()
     //**********************************
     // activate the Gouraud shading instead of the flat one
     //**********************************
-    glShadeModel (GL_FLAT);
+    glShadeModel (GL_SMOOTH);
 
     //**********************************
     // enable face culling
@@ -265,8 +253,7 @@ void init ()
 void display(double aspect_ratio)
 {
     //**********************************
-    // set the ambient light in the scene using set_ambient_light
-    // with the color defined by ambient_color
+    // L'ambiante est une lumière de fond globale ; le diffuse et le spéculaire viennent du couple lumière/matériau.
     //**********************************
     set_ambient_light(ambient_color);
 
@@ -282,7 +269,7 @@ void display(double aspect_ratio)
 
             glLoadIdentity();
 
-            //place the camera
+            // On construit la matrice de vue avant de placer les lumières et les objets.
             place_camera();
 
             //**********************************
@@ -413,6 +400,7 @@ void reshape(int w, int h)
     glViewport (0, 0, (GLsizei) w, (GLsizei) h);
     glMatrixMode (GL_PROJECTION);
     glLoadIdentity();
+    // On met à jour la projection avec le nouveau rapport d'aspect à chaque redimensionnement.
     gluPerspective (60, (GLfloat)w/(GLfloat)h, 0.1, 50);
 }
 

@@ -1,0 +1,13 @@
+function paires = appariement(pics_t, pics_f, n_v, delta_t, delta_f)
+
+nb = length(pics_t);
+paires = zeros(nb,4);
+
+for i=1:nb 
+    critere1 = (pics_t >pics_t(i)) & (pics_t -pics_t(i) < delta_t) ;
+    critere2 = abs(pics_f - pics_f(i))<delta_f;
+    Critere = find(critere1 & critere2, n_v);
+    if ~isempty(Critere)
+    paires = [pics_f(i),pics_f(Critere),pics_t(i),]
+    end
+end

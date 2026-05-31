@@ -1,9 +1,0 @@
-enum Couleur {Rouge, Vert, Bleu};
-enum Jour {Lundi, Mardi, Mercredi};
-
-main {
-  Couleur c = Rouge;
-  Jour j = Lundi;
-  print (c=Rouge);
-  print (j=Lundi);
-}

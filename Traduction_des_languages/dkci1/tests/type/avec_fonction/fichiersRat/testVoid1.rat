@@ -1,8 +1,0 @@
-void proc(){
-print 1;
-return;
-}
-main{
-proc();
-print 2;
-}

@@ -1,3 +1,0 @@
-INDEX VERSION 1.134+/home/akl8051/Bureau/Annee_2/MT/.metadata/.plugins/org.eclipse.jdt.core
-1402092491.index
-2949097923.index

@@ -43,7 +43,7 @@ b = u_0;
 
 % Matrice A du systeme :
 Lap = -Dx'*Dx -Dy'*Dy;
-lambda = 2;				% Poids de la regularisation
+lambda = 100;				% Poids de la regularisation
 A = speye(nb_pixels) -lambda*Lap;
 
 % Resolution du systeme A*u = b :

@@ -1,8 +1,0 @@
-int f(ref int a, int b) {
-    return (a+b);
-}
-
-test {
-    int x = 0;
-    int r = f(3, ref x);
-}

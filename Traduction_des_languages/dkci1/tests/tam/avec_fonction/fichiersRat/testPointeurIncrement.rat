@@ -1,0 +1,11 @@
+int incrementer(int* p) {
+    (*p) = ((*p) + 1);
+    return (*p);
+}
+
+test {
+    int x = 5;
+    int r = incrementer(&x);
+    print r;
+    print x;
+}

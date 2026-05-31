@@ -1,0 +1,15 @@
+enum Jour {Lundi, Mardi, Mercredi, Jeudi, Vendredi};
+
+int compterJours(Jour debut, Jour fin) {
+  int count = 0;
+  Jour j = debut;
+  while (false) {
+    count = (count+1);
+  }
+  return 5;
+}
+
+main {
+  int n = compterJours(Lundi, Vendredi);
+  print n;
+}

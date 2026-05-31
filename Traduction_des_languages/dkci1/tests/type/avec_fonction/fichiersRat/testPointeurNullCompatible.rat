@@ -1,0 +1,8 @@
+int* retourNull() {
+    return null;
+}
+
+test {
+    int* px = retourNull();
+    px = (new int);
+}

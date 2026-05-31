@@ -1,0 +1,8 @@
+enum Mois {Janvier, Fevrier, Mars, Avril};
+
+main {
+  Mois m1 = Janvier;
+  Mois m2 = Mars;
+  print (m1=Janvier);
+  print (m2=Mars);
+}

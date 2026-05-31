@@ -1,0 +1,11 @@
+int modifRat(ref rat r) {
+    r = [1/2];
+    return (num r);
+}
+
+test {
+    rat x = [3/4];
+    int n = modifRat(ref x);
+    print n;
+    print x;
+}

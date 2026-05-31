@@ -1,0 +1,16 @@
+enum Couleur {Rouge, Vert, Bleu};
+
+void swap(ref Couleur c1, ref Couleur c2) {
+  Couleur tmp = c1;
+  c1 = c2;
+  c2 = tmp;
+  return;
+}
+
+main {
+  Couleur a = Rouge;
+  Couleur b = Bleu;
+  swap(ref a, ref b);
+  print (a=Bleu);
+  print (b=Rouge);
+}

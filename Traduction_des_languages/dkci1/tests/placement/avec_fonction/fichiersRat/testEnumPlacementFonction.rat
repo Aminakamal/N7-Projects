@@ -1,0 +1,14 @@
+enum Jour {Lundi, Mardi};
+
+Jour getJour(int x) {
+  if (x=1) {
+    return Lundi;
+  } else {
+    return Mardi;
+  }
+}
+
+main {
+  Jour j = getJour(1);
+  print (j=Lundi);
+}

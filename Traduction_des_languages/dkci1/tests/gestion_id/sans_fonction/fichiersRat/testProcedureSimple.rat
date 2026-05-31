@@ -1,0 +1,8 @@
+void afficher() {
+    print 42;
+    return;
+}
+
+test {
+    afficher();
+}

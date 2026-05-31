@@ -1,0 +1,10 @@
+enum Jour {Lundi, Mardi, Mercredi, Jeudi, Vendredi};
+
+Jour premierJour() {
+  return Lundi;
+}
+
+main {
+  Jour j = premierJour();
+  print (j=Lundi);
+}

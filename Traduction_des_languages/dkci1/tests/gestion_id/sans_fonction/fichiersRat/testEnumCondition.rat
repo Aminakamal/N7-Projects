@@ -1,0 +1,10 @@
+enum Jour {Lundi, Mardi, Mercredi, Jeudi, Vendredi};
+
+main {
+  Jour j = Mercredi;
+  if (j=Mercredi) {
+    print true;
+  } else {
+    print false;
+  }
+}

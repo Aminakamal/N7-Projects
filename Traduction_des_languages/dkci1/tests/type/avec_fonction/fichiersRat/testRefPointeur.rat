@@ -1,0 +1,9 @@
+void initPointeur(ref int* p) {
+    p = (new int);
+    return;
+}
+
+test {
+    int* px = null;
+    initPointeur(ref px);
+}

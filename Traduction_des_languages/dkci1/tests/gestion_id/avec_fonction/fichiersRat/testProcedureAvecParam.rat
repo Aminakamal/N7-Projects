@@ -1,0 +1,8 @@
+void afficherNombre(int n) {
+    print n;
+    return;
+}
+
+test {
+    afficherNombre(99);
+}

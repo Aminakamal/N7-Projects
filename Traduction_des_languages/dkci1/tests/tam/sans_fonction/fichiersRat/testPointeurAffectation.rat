@@ -1,0 +1,6 @@
+test {
+    int x = 10;
+    int* px = &x;
+    (*px) = 20;
+    print x;
+}
